@@ -16,7 +16,7 @@ This project demonstrates how to control a stepper motor using an Arduino and an
 
 ## 🖼️ Circuit Diagram
 
-![A4988 Stepper Motor Driver Circuit](A4988-Stepper-Motor-Driver-Circuit.png)
+![A4988 Stepper Motor Driver Circuit](A4988-Stepper-Motor-Driver-circuit.png)
 
 > **Source:** [www.Circuits-DIY.com](https://www.circuits-diy.com)
 
