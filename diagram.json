@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "author": "Rajveer Kushwaha",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 77.4, "left": -39, "attrs": {} },
+    { "type": "wokwi-a4988", "id": "drv1", "top": -43.2, "left": 216, "attrs": {} },
+    {
+      "type": "wokwi-stepper-motor",
+      "id": "stepper1",
+      "top": -217.19,
+      "left": 346.03,
+      "attrs": { "size": "17" }
+    }
+  ],
+  "connections": [
+    [ "drv1:DIR", "uno:2", "cyan", [ "h-19.2" ] ],
+    [ "uno:3", "drv1:STEP", "magenta", [ "v-67.2", "h-5.6" ] ],
+    [ "drv1:GND.1", "uno:GND.1", "black", [ "v0.08", "h19.35", "v38.4", "h-211.2" ] ],
+    [ "uno:5V", "drv1:VDD", "red", [ "v28.7", "h176.6", "v-278.4" ] ],
+    [ "stepper1:B-", "drv1:2B", "red", [ "v19.2", "h-0.01" ] ],
+    [ "drv1:2A", "stepper1:B+", "green", [ "h0" ] ],
+    [ "drv1:1A", "stepper1:A+", "yellow", [ "h0" ] ],
+    [ "drv1:1B", "stepper1:A-", "blue", [ "h0" ] ],
+    [ "drv1:SLEEP", "drv1:RESET", "gray", [ "h-28.8", "v-19.2" ] ]
+  ],
+  "dependencies": {}
+}
